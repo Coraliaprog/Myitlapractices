@@ -1,0 +1,79 @@
+﻿using System;
+
+namespace RegistroPacientes
+{
+    public class Patient
+    {
+        private int id;
+        private string name;
+        private string lastName;
+        private int age;
+        private string phone;
+        private string address;
+        private string diagnosis;
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string LastName
+        {
+            get { return lastName; }
+            set { lastName = value; }
+        }
+
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
+
+        public string Phone
+        {
+            get { return phone; }
+            set { phone = value; }
+        }
+
+        public string Address
+        {
+            get { return address; }
+            set { address = value; }
+        }
+
+        public string Diagnosis
+        {
+            get { return diagnosis; }
+            set { diagnosis = value; }
+        }
+
+        public Patient()
+        {
+            id = 0;
+            name = "";
+            lastName = "";
+            age = 0;
+            phone = "";
+            address = "";
+            diagnosis = "";
+        }
+
+        public Patient(int id, string name, string lastName, int age, string phone, string address, string diagnosis)
+        {
+            this.id = id;
+            this.name = name;
+            this.lastName = lastName;
+            this.age = age;
+            this.phone = phone;
+            this.address = address;
+            this.diagnosis = diagnosis;
+        }
+    }
+}
